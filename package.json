@@ -20,7 +20,6 @@
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "expo": ">= 27.x",
     "react": ">= 16.x",
     "react-native": ">= 0.55.x",
     "react-native-vector-icons": ">= 6.x.x"
