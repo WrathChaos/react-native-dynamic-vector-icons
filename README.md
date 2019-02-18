@@ -1,4 +1,4 @@
-[<img alt="React Native Bottom Bar" src="https://github.com/WrathChaos/react-native-dynamic-vector-icons/blob/master/assets/Sreenshots/logo.png" width="1050"/>
+<img alt="React Native Bottom Bar" src="https://github.com/WrathChaos/react-native-dynamic-vector-icons/blob/master/assets/Sreenshots/logo.png" width="1050"/>
 
 Wrapper of react-native-vector-icons to use dynamic types. 
 
