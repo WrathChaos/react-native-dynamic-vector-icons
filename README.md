@@ -28,9 +28,9 @@ npm i react-native-dynamic-vector-icons
 ##### IMPORTANT! You need install them.
 
 ```
-    "react": ">= 16.x",
-    "react-native": ">= 0.55.x",
-    "react-native-vector-icons": ">= 6.x.x"
+"react": ">= 16.x",
+"react-native": ">= 0.55.x",
+"react-native-vector-icons": ">= 6.x.x"
 ```
 
 
