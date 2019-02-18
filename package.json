@@ -1,0 +1,41 @@
+{
+  "name": "react-native-dynamic-vector-icons",
+  "version": "0.0.1",
+  "description": "Wrapper of react-native-vector-icons to use dynamic types.",
+  "keywords": [
+    "react-native",
+    "icons",
+    "dynamic-vector-icons",
+    "vector",
+    "icons",
+    "vector-icons",
+    "javascript",
+    "ui-lib",
+    "rn"
+  ],
+  "homepage": "https://www.freakycoder.com",
+  "bugs": "https://github.com/WrathChaos/react-native-floating-action-button/issues",
+  "main": "./lib/src/components/FloatingActionButton.js",
+  "repository": "git@github.com:WrathChaos/react-native-floating-action-button.git",
+  "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject"
+  },
+  "peerDependencies": {
+    "expo": ">= 27.x",
+    "react": ">= 16.x",
+    "react-native": ">= 0.55.x",
+    "react-native-elements": ">= 0.19.x",
+    "react-native-material-ripple": ">+ 0.8.x"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^5.0.0",
+    "@types/expo": "^27.0.12",
+    "@types/react": "^16.4.15",
+    "@types/react-native": "^0.57.2"
+  }
+}
