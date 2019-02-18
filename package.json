@@ -14,28 +14,15 @@
     "rn"
   ],
   "homepage": "https://www.freakycoder.com",
-  "bugs": "https://github.com/WrathChaos/react-native-floating-action-button/issues",
-  "main": "./lib/src/components/FloatingActionButton.js",
-  "repository": "git@github.com:WrathChaos/react-native-floating-action-button.git",
+  "bugs": "https://github.com/WrathChaos/react-native-dynamic-vector-icons/issues",
+  "main": "./lib/src/components/Icon.js",
+  "repository": "git@github.com:WrathChaos/react-native-dynamic-vector-icons.git",
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "eject": "expo eject"
-  },
   "peerDependencies": {
     "expo": ">= 27.x",
     "react": ">= 16.x",
     "react-native": ">= 0.55.x",
-    "react-native-elements": ">= 0.19.x",
-    "react-native-material-ripple": ">+ 0.8.x"
-  },
-  "devDependencies": {
-    "babel-preset-expo": "^5.0.0",
-    "@types/expo": "^27.0.12",
-    "@types/react": "^16.4.15",
-    "@types/react-native": "^0.57.2"
+    "react-native-vector-icons": ">= 6.x.x"
   }
 }
