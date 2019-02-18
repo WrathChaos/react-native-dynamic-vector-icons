@@ -42,7 +42,6 @@ npm i react-native-dynamic-vector-icons
 
 ### Configuration - Props
 
-##### BottomBar:
 
 | Property |  Type  | Default | Description                         |
 | -------- | :----: | :-----: | ----------------------------------- |
