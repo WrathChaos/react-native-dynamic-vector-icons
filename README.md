@@ -1,4 +1,4 @@
-# <img alt="React Native Bottom Bar" src="https://github.com/WrathChaos/react-native-dynamic-vector-icons/blob/master/assets/Sreenshots/logo.png" width="1050"/>
+<img alt="React Native Bottom Bar" src="https://github.com/WrathChaos/react-native-dynamic-vector-icons/blob/master/assets/Sreenshots/logo.png" width="1050"/>
 
 Wrapper of react-native-vector-icons to use dynamic types. 
 
@@ -28,9 +28,9 @@ npm i react-native-dynamic-vector-icons
 ##### IMPORTANT! You need install them.
 
 ```
-    "react": ">= 16.x",
-    "react-native": ">= 0.55.x",
-    "react-native-vector-icons": ">= 6.x.x"
+"react": ">= 16.x",
+"react-native": ">= 0.55.x",
+"react-native-vector-icons": ">= 6.x.x"
 ```
 
 
@@ -62,3 +62,4 @@ FreakyCoder, kurayogun@gmail.com
 ## License
 
 React Native Dynamic Vector Icons Library is available under the MIT license. See the LICENSE file for more info.
+))
