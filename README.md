@@ -6,9 +6,6 @@ Wrapper of react-native-vector-icons to use dynamic types.
 [![npm downloads](https://img.shields.io/npm/dm/react-native-dynamic-vector-icons.svg)](https://www.npmjs.com/package/react-native-dynamic-vector-icons)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-<p align="center">
-<img alt="React Native Dynamic Vector Icons" src="https://github.com/WrathChaos/react-native-dynamic-vector-icons/blob/master/assets/Screenshots/ss.png" width="49.7%"/>
-</p>
 
 ## Installation
 
