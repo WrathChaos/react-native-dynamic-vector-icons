@@ -16,6 +16,8 @@ Add the dependency:
 ```ruby
 npm i react-native-dynamic-vector-icons
 ```
+
+
 ### Expo Version: 
 
 ```ruby
