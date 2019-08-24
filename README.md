@@ -1,11 +1,15 @@
 <img alt="React Native Bottom Bar" src="https://github.com/WrathChaos/react-native-dynamic-vector-icons/blob/master/assets/Sreenshots/logo.png" width="1050"/>
 
-Wrapper of react-native-vector-icons to use dynamic types. 
+[![Battle Tested ✅](https://img.shields.io/badge/-Battle--Tested%20%E2%9C%85-03666e?style=for-the-badge)](https://github.com/WrathChaos/react-native-dynamic-vector-icons)
 
-[![npm version](https://img.shields.io/npm/v/react-native-dynamic-vector-icons.svg)](https://www.npmjs.com/package/react-native-dynamic-vector-icons)
-[![npm](https://img.shields.io/npm/dt/react-native-dynamic-vector-icons.svg)](https://www.npmjs.com/package/react-native-dynamic-vector-icons)
-![expo-compatible](https://img.shields.io/badge/Expo-compatible-9cf.svg)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+[![Wrapper of react-native-vector-icons to use dynamic types](https://img.shields.io/badge/-Wrapper%20of%20react--native--vector--icons%20to%20use%20dynamic%20types-lightgrey?style=for-the-badge)](https://github.com/WrathChaos/react-native-dynamic-vector-icons)
+
+
+[![npm version](https://img.shields.io/npm/v/react-native-dynamic-vector-icons.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-dynamic-vector-icons)
+[![npm](https://img.shields.io/npm/dt/react-native-dynamic-vector-icons.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-dynamic-vector-icons)
+![expo-compatible](https://img.shields.io/badge/Expo-compatible-9cf.svg?style=for-the-badge)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 
 ## Installation
