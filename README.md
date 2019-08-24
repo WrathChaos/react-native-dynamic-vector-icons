@@ -1,4 +1,4 @@
-<img alt="React Native Bottom Bar" src="https://github.com/WrathChaos/react-native-dynamic-vector-icons/blob/master/assets/Sreenshots/logo.png" width="1050"/>
+<img alt="React Native Bottom Bar" src="https://github.com/WrathChaos/react-native-dynamic-vector-icons/blob/master/assets/logo.png" width="1050"/>
 
 [![Battle Tested ✅](https://img.shields.io/badge/-Battle--Tested%20%E2%9C%85-03666e?style=for-the-badge)](https://github.com/WrathChaos/react-native-dynamic-vector-icons)
 
