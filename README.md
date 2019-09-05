@@ -9,7 +9,7 @@
 [![npm version](https://img.shields.io/npm/v/react-native-dynamic-vector-icons.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-dynamic-vector-icons)
 [![npm](https://img.shields.io/npm/dt/react-native-dynamic-vector-icons.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-dynamic-vector-icons)
 ![expo-compatible](https://img.shields.io/badge/Expo-compatible-9cf.svg?style=for-the-badge)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT) [![Greenkeeper badge](https://badges.greenkeeper.io/WrathChaos/react-native-dynamic-vector-icons.svg)](https://greenkeeper.io/)
 
 
 ## Installation
