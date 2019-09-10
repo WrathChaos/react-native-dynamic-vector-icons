@@ -1,8 +1,10 @@
 {
   "name": "react-native-dynamic-vector-icons",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Wrapper of react-native-vector-icons to use dynamic types.",
   "keywords": [
+    "typescript",
+    "vector-icons",
     "react-native",
     "icons",
     "dynamic-vector-icons",
@@ -20,7 +22,6 @@
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "prop-types": ">= 15.x",
     "react": ">= 16.x",
     "react-native": ">= 0.55.x",
     "react-native-vector-icons": ">= 6.x.x"
