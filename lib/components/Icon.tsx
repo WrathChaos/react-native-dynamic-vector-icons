@@ -1,19 +1,20 @@
-import React from 'react';
+import React from "react";
 
 interface IconProps {
   type:
-    | 'AntDesign'
-    | 'MaterialIcons'
-    | 'EvilIcons'
-    | 'Entypo'
-    | 'FontAwesome'
-    | 'Foundation'
-    | 'Ionicons'
-    | 'MaterialCommunityIcons'
-    | 'Zocial'
-    | 'Octicons'
-    | 'SimpleLineIcons'
-    | 'Fontisto';
+    | string
+    | "AntDesign"
+    | "MaterialIcons"
+    | "EvilIcons"
+    | "Entypo"
+    | "FontAwesome"
+    | "Foundation"
+    | "Ionicons"
+    | "MaterialCommunityIcons"
+    | "Zocial"
+    | "Octicons"
+    | "SimpleLineIcons"
+    | "Fontisto";
   name: string;
   size?: number;
   color?: string;
@@ -22,10 +23,10 @@ interface IconProps {
 }
 
 const Icon = (props: IconProps): JSX.Element => {
-  const {type, name, color, size, onPress, style} = props;
+  const { type, name, color, size, onPress, style } = props;
   switch (type) {
-    case 'AntDesign': {
-      const AntDesign = require('react-native-vector-icons/AntDesign').default;
+    case "AntDesign": {
+      const AntDesign = require("react-native-vector-icons/AntDesign").default;
       return (
         <AntDesign
           name={name}
@@ -37,8 +38,8 @@ const Icon = (props: IconProps): JSX.Element => {
       );
     }
 
-    case 'Entypo': {
-      const Entypo = require('react-native-vector-icons/Entypo').default;
+    case "Entypo": {
+      const Entypo = require("react-native-vector-icons/Entypo").default;
       return (
         <Entypo
           name={name}
@@ -50,8 +51,8 @@ const Icon = (props: IconProps): JSX.Element => {
       );
     }
 
-    case 'Ionicons': {
-      const Ionicons = require('react-native-vector-icons/Ionicons').default;
+    case "Ionicons": {
+      const Ionicons = require("react-native-vector-icons/Ionicons").default;
       return (
         <Ionicons
           name={name}
@@ -63,8 +64,8 @@ const Icon = (props: IconProps): JSX.Element => {
       );
     }
 
-    case 'SimpleLineIcons': {
-      const SimpleLineIcons = require('react-native-vector-icons/SimpleLineIcons')
+    case "SimpleLineIcons": {
+      const SimpleLineIcons = require("react-native-vector-icons/SimpleLineIcons")
         .default;
       return (
         <SimpleLineIcons
@@ -77,8 +78,8 @@ const Icon = (props: IconProps): JSX.Element => {
       );
     }
 
-    case 'EvilIcons': {
-      const EvilIcons = require('react-native-vector-icons/EvilIcons').default;
+    case "EvilIcons": {
+      const EvilIcons = require("react-native-vector-icons/EvilIcons").default;
       return (
         <EvilIcons
           name={name}
@@ -90,8 +91,8 @@ const Icon = (props: IconProps): JSX.Element => {
       );
     }
 
-    case 'MaterialIcons': {
-      const MaterialIcons = require('react-native-vector-icons/MaterialIcons')
+    case "MaterialIcons": {
+      const MaterialIcons = require("react-native-vector-icons/MaterialIcons")
         .default;
       return (
         <MaterialIcons
@@ -104,8 +105,8 @@ const Icon = (props: IconProps): JSX.Element => {
       );
     }
 
-    case 'FontAwesome': {
-      const FontAwesome = require('react-native-vector-icons/FontAwesome')
+    case "FontAwesome": {
+      const FontAwesome = require("react-native-vector-icons/FontAwesome")
         .default;
       return (
         <FontAwesome
@@ -118,8 +119,8 @@ const Icon = (props: IconProps): JSX.Element => {
       );
     }
 
-    case 'Foundation': {
-      const Foundation = require('react-native-vector-icons/Foundation')
+    case "Foundation": {
+      const Foundation = require("react-native-vector-icons/Foundation")
         .default;
       return (
         <Foundation
@@ -132,8 +133,8 @@ const Icon = (props: IconProps): JSX.Element => {
       );
     }
 
-    case 'MaterialCommunityIcons': {
-      const MaterialCommunityIcons = require('react-native-vector-icons/MaterialCommunityIcons')
+    case "MaterialCommunityIcons": {
+      const MaterialCommunityIcons = require("react-native-vector-icons/MaterialCommunityIcons")
         .default;
       return (
         <MaterialCommunityIcons
@@ -146,8 +147,8 @@ const Icon = (props: IconProps): JSX.Element => {
       );
     }
 
-    case 'Zocial': {
-      const Zocial = require('react-native-vector-icons/Zocial').default;
+    case "Zocial": {
+      const Zocial = require("react-native-vector-icons/Zocial").default;
       return (
         <Zocial
           name={name}
@@ -159,8 +160,8 @@ const Icon = (props: IconProps): JSX.Element => {
       );
     }
 
-    case 'Octicons': {
-      const Octicons = require('react-native-vector-icons/Octicons').default;
+    case "Octicons": {
+      const Octicons = require("react-native-vector-icons/Octicons").default;
       return (
         <Octicons
           name={name}
@@ -171,8 +172,8 @@ const Icon = (props: IconProps): JSX.Element => {
         />
       );
     }
-    case 'Fontisto': {
-      const Fontisto = require('react-native-vector-icons/Fontisto').default;
+    case "Fontisto": {
+      const Fontisto = require("react-native-vector-icons/Fontisto").default;
       return (
         <Fontisto
           name={name}
@@ -185,7 +186,7 @@ const Icon = (props: IconProps): JSX.Element => {
     }
 
     default: {
-      const MaterialIcons = require('react-native-vector-icons/MaterialIcons')
+      const MaterialIcons = require("react-native-vector-icons/MaterialIcons")
         .default;
       return (
         <MaterialIcons
@@ -204,7 +205,7 @@ Icon.defaultProps = {
   size: 20,
   style: {},
   onPress: null,
-  color: '#757575',
+  color: "#757575"
 };
 
 export default Icon;
