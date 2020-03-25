@@ -38,7 +38,7 @@ npm i react-native-dynamic-vector-icons
 ## Basic Usage
 
 ```ruby
-<Icon name="github" type="AntDesign" size={30} color="purple" />
+<Icon name="github" type="AntDesign" size={30} color="purple" onPress={() => {}} />
 ```
 
 ## Bundled Icon Sets
