@@ -2,7 +2,10 @@
 #
 .DS_Store
 
-.expo/*
+package-lock.json
+
+node_modules
+
 # Xcode
 #
 build/
