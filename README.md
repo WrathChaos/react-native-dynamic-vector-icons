@@ -62,13 +62,14 @@ npm i react-native-dynamic-vector-icons
 
 ### Configuration - Props
 
-| Property |  Type  | Default | Description                         |
-| -------- | :----: | :-----: | ----------------------------------- |
-| style    | style  |  style  | use this to change the Icon's style |
-| name     | string |  null   | use this to change icon's itself    |
-| type     | string |  null   | set the icon's type                 |
-| size     | number |  null   | changes the icon's size             |
-| color    | color  |  null   | use this to change icon's color     |
+| Property |   Type   |  Default  | Description                                      |
+| -------- | :------: | :-------: | ------------------------------------------------ |
+| style    |  style   |   style   | use this to change the Icon's style              |
+| name     |  string  |   null    | use this to change icon's itself                 |
+| type     |  string  |   null    | set the icon's type                              |
+| size     |  number  |   null    | changes the icon's size                          |
+| color    |  color   |   null    | use this to change icon's color                  |
+| onPress  | function | undefined | use this to set the icon's onPress functionality |
 
 ### Credits
 
