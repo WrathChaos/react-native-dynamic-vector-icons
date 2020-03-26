@@ -34,10 +34,15 @@ npm i react-native-dynamic-vector-icons
 "react-native": ">= 0.55.x",
 "react-native-vector-icons": ">= 6.x.x"
 ```
+## Import
+
+```js
+import Icon from "react-native-dynamic-vector-icons";
+```
 
 ## Basic Usage
 
-```ruby
+```jsx
 <Icon name="github" type="AntDesign" size={30} color="purple" onPress={() => {}} />
 ```
 
