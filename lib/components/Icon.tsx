@@ -14,7 +14,8 @@ interface IconProps {
     | "Zocial"
     | "Octicons"
     | "SimpleLineIcons"
-    | "Fontisto";
+    | "Fontisto"
+    | "Feather";
   name: string;
   size?: number;
   color?: string;
@@ -184,6 +185,18 @@ const Icon = (props: IconProps): JSX.Element => {
         />
       );
     }
+    case "Feather": {
+      const Feather = require("react-native-vector-icons/Feather").default;
+      return (
+        <Feather
+          name={name}
+          size={size}
+          style={style}
+          color={color}
+          onPress={onPress}
+        />
+      );
+    }
 
     default: {
       const MaterialIcons = require("react-native-vector-icons/MaterialIcons")
@@ -205,7 +218,7 @@ Icon.defaultProps = {
   size: 20,
   style: {},
   onPress: null,
-  color: "#757575"
+  color: "#757575",
 };
 
 export default Icon;
