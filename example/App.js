@@ -1,16 +1,21 @@
-import React, {Fragment} from 'react';
-import {StatusBar, SafeAreaView} from 'react-native';
-import Icon from 'react-native-dynamic-vector-icons';
+import React from "react";
+import { View, StatusBar, SafeAreaView } from "react-native";
+import Icon from "react-native-dynamic-vector-icons";
 
 const App = () => {
   return (
-    <Fragment>
+    <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView
-        style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <Icon name="applemusic" type="Fontisto" />
+        style={{
+          flex: 1,
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Icon name="github" type="Feather" size={50} color="black" />
       </SafeAreaView>
-    </Fragment>
+    </>
   );
 };
 
