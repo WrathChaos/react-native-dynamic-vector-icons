@@ -1,6 +1,6 @@
 {
   "name": "react-native-dynamic-vector-icons",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Wrapper of react-native-vector-icons to use dynamic types.",
   "keywords": [
     "typescript",
@@ -21,15 +21,42 @@
   "repository": "git@github.com:WrathChaos/react-native-dynamic-vector-icons.git",
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "cd lib && tsc && cp ../package.json ../build/dist/ && Echo Build completed!",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
   "peerDependencies": {
-    "react": ">= 16.x",
+    "react": ">= 16.x.x",
     "react-native": ">= 0.55.x",
     "react-native-vector-icons": ">= 6.x.x"
   },
   "devDependencies": {
-    "@types/react": "^16.9.49",
-    "@types/react-native": "^0.63.18",
-    "eslint": "^7.0.0",
-    "typescript": "^4.0.2"
+    "@types/react": "^16.9.22",
+    "@types/react-native": "^0.63.0",
+    "react-native-typescript-transformer": "^1.2.13",
+    "typescript": "^3.7.4",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./src/*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "eslint src/*.js --fix-dry-run"
+    ]
+  },
+  "dependencies": {
+    "@types/jest": "^26.0.13"
   }
 }
