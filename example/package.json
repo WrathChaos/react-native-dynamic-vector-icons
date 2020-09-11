@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "16.9.0",
     "react-native": "0.61.5",
-    "react-native-dynamic-vector-icons": "^1.0.0",
+    "react-native-dynamic-vector-icons": "file:..",
     "react-native-vector-icons": "^6.6.0"
   },
   "devDependencies": {
