@@ -14,6 +14,7 @@ const App = () => {
         }}
       >
         <Icon name="github" type="Feather" size={50} color="black" />
+        <Icon name="cog" type="FontAwesome5" size={50} color="black" />
       </SafeAreaView>
     </>
   );

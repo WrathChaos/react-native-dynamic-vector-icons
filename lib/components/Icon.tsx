@@ -1,8 +1,16 @@
 import React from "react";
 
-interface IconProps {
+interface IconPropsBase {
+  type: string;
+  name: string;
+  size?: number;
+  color?: string;
+  onPress?: Function;
+  style?: React.CSSProperties;
+}
+
+interface BasicIconProps extends IconPropsBase {
   type:
-    | string
     | "AntDesign"
     | "MaterialIcons"
     | "EvilIcons"
@@ -16,16 +24,20 @@ interface IconProps {
     | "SimpleLineIcons"
     | "Fontisto"
     | "Feather";
-  name: string;
-  size?: number;
-  color?: string;
-  onPress?: Function;
-  style?: React.CSSProperties;
 }
 
+interface Fa5IconProps extends IconPropsBase {
+  type: "FontAwesome5";
+  brand?: boolean;
+  solid?: boolean;
+}
+
+type IconProps = BasicIconProps | Fa5IconProps;
+
 const Icon = (props: IconProps): JSX.Element => {
-  const { type, name, color, size, onPress, style } = props;
-  switch (type) {
+  const { name, color, size, onPress, style } = props;
+
+  switch (props.type) {
     case "AntDesign": {
       const AntDesign = require("react-native-vector-icons/AntDesign").default;
       return (
@@ -116,6 +128,23 @@ const Icon = (props: IconProps): JSX.Element => {
           style={style}
           color={color}
           onPress={onPress}
+        />
+      );
+    }
+
+    case "FontAwesome5": {
+      const FontAwesome5 = require("react-native-vector-icons/FontAwesome5")
+        .default;
+      const { brand, solid } = props;
+      return (
+        <FontAwesome5
+          name={name}
+          size={size}
+          style={style}
+          color={color}
+          onPress={onPress}
+          brand={brand}
+          solid={solid}
         />
       );
     }
