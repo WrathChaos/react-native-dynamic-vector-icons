@@ -23,6 +23,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc -p . && echo Build completed!",
+    "watch": "tsc -p . --watch",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "version": "npm run format && git add -A src",
