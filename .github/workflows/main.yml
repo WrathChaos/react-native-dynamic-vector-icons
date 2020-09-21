@@ -33,5 +33,6 @@ jobs:
 
       - name: Test example app
         run: |
+          cd example
           npm ci
           npm run test
