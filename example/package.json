@@ -8,7 +8,9 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "postinstall": "cd .. && npm i && npm run build"
+    "postinstall": "cd .. && npm i && npm run build",
+    "compile:android": "cd android && ./gradlew compileDebugSources",
+    "compile:ios": "cd ios && export RCT_NO_LAUNCH_PACKAGER=\"true\" && export RCT_NO_BUNDLE=\"true\" && xcodebuild CODE_SIGN_IDENTITY=\"\" CODE_SIGNING_REQUIRED=\"NO\" CODE_SIGN_ENTITLEMENTS=\"\" CODE_SIGNING_ALLOWED=\"NO\" -destination \"platform=iOS Simulator,name=iPhone 11,OS=13.7\" -workspace example.xcworkspace -scheme example build-for-testing"
   },
   "dependencies": {
     "react": "16.13.1",

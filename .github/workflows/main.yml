@@ -49,3 +49,48 @@ jobs:
           cd example
           npm ci
           npm run test
+
+  build-android:
+    name: "Build Android example"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: set up JDK 1.8
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+
+      - name: Install dependencies
+        run: |
+          cd example
+          npm ci
+      - name: Android build
+        run: |
+          cd example
+          npm run compile:android
+
+  build-ios:
+    name: "Build iOS example"
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - name: Show the currently detailed version of Xcode for CLI
+        run: xcode-select -p
+      - name: Install dependencies
+        run: |
+          cd example
+          npm ci
+          cd ios
+          pod install
+      - name: iOS build
+        run: |
+          cd example
+          npm run compile:ios
