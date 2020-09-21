@@ -12,7 +12,7 @@
     "moduleResolution": "node",
     "skipLibCheck": true,
     "baseUrl": "./",
-    "outDir": "build/dist",
+    "outDir": "dist",
     "noEmitHelpers": true,
     "importHelpers": true,
     "experimentalDecorators": true,
@@ -22,6 +22,7 @@
     "sourceMap": true /* Generates corresponding '.map' file. */
   },
   "exclude": [
+    "dist",
     "example",
     "node_modules",
     "babel.config.js",
