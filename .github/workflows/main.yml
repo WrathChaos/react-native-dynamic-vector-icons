@@ -28,8 +28,21 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Check types
-        run: npx tsc -p .
+      - name: Perform build
+        run: npm run build
+
+      - name: Examine archive
+        run: npm publish --dry-run
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v1.4.3
+        with:
+          node-version: 12.x
 
       - name: Test example app
         run: |
