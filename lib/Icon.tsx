@@ -1,12 +1,13 @@
 import * as React from "react";
+import { TextProps, GestureResponderEvent, TextStyle } from "react-native";
 
-interface IconPropsBase {
+interface IconPropsBase extends TextProps {
   type: string;
   name: string;
   size?: number;
   color?: string;
-  onPress?: Function;
-  style?: React.CSSProperties;
+  onPress?: (event: GestureResponderEvent) => void;
+  style?: TextStyle;
 }
 
 interface BasicIconProps extends IconPropsBase {
@@ -35,13 +36,14 @@ interface Fa5IconProps extends IconPropsBase {
 type IconProps = BasicIconProps | Fa5IconProps;
 
 const Icon = (props: IconProps): JSX.Element => {
-  const { name, color, size, onPress, style } = props;
+  const { name, color, size, onPress, style, ...textProps } = props;
 
   switch (props.type) {
     case "AntDesign": {
       const AntDesign = require("react-native-vector-icons/AntDesign").default;
       return (
         <AntDesign
+          {...textProps}
           name={name}
           size={size}
           style={style}
@@ -54,6 +56,7 @@ const Icon = (props: IconProps): JSX.Element => {
       const Entypo = require("react-native-vector-icons/Entypo").default;
       return (
         <Entypo
+          {...textProps}
           name={name}
           size={size}
           style={style}
@@ -66,6 +69,7 @@ const Icon = (props: IconProps): JSX.Element => {
       const Ionicons = require("react-native-vector-icons/Ionicons").default;
       return (
         <Ionicons
+          {...textProps}
           name={name}
           size={size}
           style={style}
@@ -79,6 +83,7 @@ const Icon = (props: IconProps): JSX.Element => {
         .default;
       return (
         <SimpleLineIcons
+          {...textProps}
           name={name}
           size={size}
           style={style}
@@ -91,6 +96,7 @@ const Icon = (props: IconProps): JSX.Element => {
       const EvilIcons = require("react-native-vector-icons/EvilIcons").default;
       return (
         <EvilIcons
+          {...textProps}
           name={name}
           size={size}
           style={style}
@@ -104,6 +110,7 @@ const Icon = (props: IconProps): JSX.Element => {
         .default;
       return (
         <MaterialIcons
+          {...textProps}
           name={name}
           size={size}
           style={style}
@@ -117,6 +124,7 @@ const Icon = (props: IconProps): JSX.Element => {
         .default;
       return (
         <FontAwesome
+          {...textProps}
           name={name}
           size={size}
           style={style}
@@ -131,6 +139,7 @@ const Icon = (props: IconProps): JSX.Element => {
       const { brand, solid } = props;
       return (
         <FontAwesome5
+          {...textProps}
           name={name}
           size={size}
           style={style}
@@ -146,6 +155,7 @@ const Icon = (props: IconProps): JSX.Element => {
         .default;
       return (
         <Foundation
+          {...textProps}
           name={name}
           size={size}
           style={style}
@@ -159,6 +169,7 @@ const Icon = (props: IconProps): JSX.Element => {
         .default;
       return (
         <MaterialCommunityIcons
+          {...textProps}
           name={name}
           size={size}
           style={style}
@@ -171,6 +182,7 @@ const Icon = (props: IconProps): JSX.Element => {
       const Zocial = require("react-native-vector-icons/Zocial").default;
       return (
         <Zocial
+          {...textProps}
           name={name}
           size={size}
           style={style}
@@ -183,6 +195,7 @@ const Icon = (props: IconProps): JSX.Element => {
       const Octicons = require("react-native-vector-icons/Octicons").default;
       return (
         <Octicons
+          {...textProps}
           name={name}
           style={style}
           color={color}
@@ -195,6 +208,7 @@ const Icon = (props: IconProps): JSX.Element => {
       const Fontisto = require("react-native-vector-icons/Fontisto").default;
       return (
         <Fontisto
+          {...textProps}
           name={name}
           size={size}
           style={style}
@@ -207,6 +221,7 @@ const Icon = (props: IconProps): JSX.Element => {
       const Feather = require("react-native-vector-icons/Feather").default;
       return (
         <Feather
+          {...textProps}
           name={name}
           size={size}
           style={style}
@@ -220,6 +235,7 @@ const Icon = (props: IconProps): JSX.Element => {
         .default;
       return (
         <MaterialIcons
+          {...textProps}
           name={name}
           size={size}
           style={style}
