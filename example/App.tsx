@@ -1,6 +1,6 @@
-import React from 'react';
-import {View, StatusBar, SafeAreaView} from 'react-native';
-import Icon from 'react-native-dynamic-vector-icons';
+import React from "react";
+import { View, StatusBar, SafeAreaView } from "react-native";
+import Icon from "react-native-dynamic-vector-icons";
 
 const App = () => {
   return (
@@ -9,9 +9,10 @@ const App = () => {
       <SafeAreaView
         style={{
           flex: 1,
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}>
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <Icon name="github" type="Feather" size={50} color="black" />
         <Icon name="cog" type="FontAwesome5" size={50} color="black" />
       </SafeAreaView>

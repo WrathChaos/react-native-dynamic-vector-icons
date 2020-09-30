@@ -10,30 +10,67 @@ interface IconPropsBase extends TextProps {
   style?: TextStyle;
 }
 
-interface BasicIconProps extends IconPropsBase {
-  type:
-    | "AntDesign"
-    | "MaterialIcons"
-    | "EvilIcons"
-    | "Entypo"
-    | "FontAwesome"
-    | "Foundation"
-    | "Ionicons"
-    | "MaterialCommunityIcons"
-    | "Zocial"
-    | "Octicons"
-    | "SimpleLineIcons"
-    | "Fontisto"
-    | "Feather";
+interface AntDesignProps extends IconPropsBase {
+  type: "AntDesign";
+}
+interface MaterialIconsProps extends IconPropsBase {
+  type: "MaterialIcons";
+}
+interface EvilIconsProps extends IconPropsBase {
+  type: "EvilIcons";
+}
+interface EntypoProps extends IconPropsBase {
+  type: "Entypo";
+}
+interface FontAwesomeProps extends IconPropsBase {
+  type: "FontAwesome";
+}
+interface FoundationProps extends IconPropsBase {
+  type: "Foundation";
+}
+interface IoniconsProps extends IconPropsBase {
+  type: "Ionicons";
+}
+interface MaterialCommunityIconsProps extends IconPropsBase {
+  type: "MaterialCommunityIcons";
+}
+interface ZocialProps extends IconPropsBase {
+  type: "Zocial";
+}
+interface OcticonsProps extends IconPropsBase {
+  type: "Octicons";
+}
+interface SimpleLineIconsProps extends IconPropsBase {
+  type: "SimpleLineIcons";
+}
+interface FontistoProps extends IconPropsBase {
+  type: "Fontisto";
+}
+interface FeatherProps extends IconPropsBase {
+  type: "Feather";
 }
 
-interface Fa5IconProps extends IconPropsBase {
+interface FontAwesome5Props extends IconPropsBase {
   type: "FontAwesome5";
   brand?: boolean;
   solid?: boolean;
 }
 
-type IconProps = BasicIconProps | Fa5IconProps;
+type IconProps =
+  | AntDesignProps
+  | MaterialIconsProps
+  | EvilIconsProps
+  | EntypoProps
+  | FontAwesomeProps
+  | FoundationProps
+  | IoniconsProps
+  | MaterialCommunityIconsProps
+  | ZocialProps
+  | OcticonsProps
+  | SimpleLineIconsProps
+  | FontistoProps
+  | FeatherProps
+  | FontAwesome5Props;
 
 const Icon = (props: IconProps): JSX.Element => {
   const { name, color, size, onPress, style, ...textProps } = props;
