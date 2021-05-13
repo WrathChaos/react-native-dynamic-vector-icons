@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StatusBar, SafeAreaView } from "react-native";
+import { StatusBar, SafeAreaView } from "react-native";
 import Icon from "react-native-dynamic-vector-icons";
 
 const App = () => {
