@@ -1,6 +1,6 @@
 {
   "name": "react-native-dynamic-vector-icons",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Wrapper of react-native-vector-icons to use dynamic types.",
   "keywords": [
     "typescript",

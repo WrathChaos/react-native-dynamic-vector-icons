@@ -1,7 +1,6 @@
 import * as React from "react";
 import { TextProps, GestureResponderEvent, TextStyle } from "react-native";
-
-interface IconPropsBase extends TextProps {
+export interface IconPropsBase extends TextProps {
   type: string;
   name: string;
   size?: number;
