@@ -1,5 +1,22 @@
 import * as React from "react";
 import { TextProps, GestureResponderEvent, TextStyle } from "react-native";
+
+export type IconType =
+  | "FontAwesome"
+  | "AntDesign"
+  | "MaterialIcons"
+  | "EvilIcons"
+  | "Entypo"
+  | "Foundation"
+  | "Ionicons"
+  | "MaterialCommunityIcons"
+  | "Zocial"
+  | "Octicons"
+  | "SimpleLineIcons"
+  | "Fontisto"
+  | "Feather"
+  | "FontAwesome5";
+
 export interface IconPropsBase extends TextProps {
   type: string;
   name: string;
@@ -115,8 +132,8 @@ const Icon = (props: IconProps): JSX.Element => {
       );
     }
     case "SimpleLineIcons": {
-      const SimpleLineIcons = require("react-native-vector-icons/SimpleLineIcons")
-        .default;
+      const SimpleLineIcons =
+        require("react-native-vector-icons/SimpleLineIcons").default;
       return (
         <SimpleLineIcons
           {...textProps}
@@ -142,8 +159,8 @@ const Icon = (props: IconProps): JSX.Element => {
       );
     }
     case "MaterialIcons": {
-      const MaterialIcons = require("react-native-vector-icons/MaterialIcons")
-        .default;
+      const MaterialIcons =
+        require("react-native-vector-icons/MaterialIcons").default;
       return (
         <MaterialIcons
           {...textProps}
@@ -156,8 +173,8 @@ const Icon = (props: IconProps): JSX.Element => {
       );
     }
     case "FontAwesome": {
-      const FontAwesome = require("react-native-vector-icons/FontAwesome")
-        .default;
+      const FontAwesome =
+        require("react-native-vector-icons/FontAwesome").default;
       return (
         <FontAwesome
           {...textProps}
@@ -170,8 +187,8 @@ const Icon = (props: IconProps): JSX.Element => {
       );
     }
     case "FontAwesome5": {
-      const FontAwesome5 = require("react-native-vector-icons/FontAwesome5")
-        .default;
+      const FontAwesome5 =
+        require("react-native-vector-icons/FontAwesome5").default;
       const { brand, solid } = props;
       return (
         <FontAwesome5
@@ -187,8 +204,8 @@ const Icon = (props: IconProps): JSX.Element => {
       );
     }
     case "Foundation": {
-      const Foundation = require("react-native-vector-icons/Foundation")
-        .default;
+      const Foundation =
+        require("react-native-vector-icons/Foundation").default;
       return (
         <Foundation
           {...textProps}
@@ -201,8 +218,8 @@ const Icon = (props: IconProps): JSX.Element => {
       );
     }
     case "MaterialCommunityIcons": {
-      const MaterialCommunityIcons = require("react-native-vector-icons/MaterialCommunityIcons")
-        .default;
+      const MaterialCommunityIcons =
+        require("react-native-vector-icons/MaterialCommunityIcons").default;
       return (
         <MaterialCommunityIcons
           {...textProps}
@@ -267,8 +284,8 @@ const Icon = (props: IconProps): JSX.Element => {
       );
     }
     default: {
-      const MaterialIcons = require("react-native-vector-icons/MaterialIcons")
-        .default;
+      const MaterialIcons =
+        require("react-native-vector-icons/MaterialIcons").default;
       return (
         <MaterialIcons
           {...textProps}
