@@ -1,92 +1,34 @@
 import * as React from "react";
 import { TextProps, GestureResponderEvent, TextStyle } from "react-native";
 
-export type IconType =
-  | "FontAwesome"
-  | "AntDesign"
-  | "MaterialIcons"
-  | "EvilIcons"
-  | "Entypo"
-  | "Foundation"
-  | "Ionicons"
-  | "MaterialCommunityIcons"
-  | "Zocial"
-  | "Octicons"
-  | "SimpleLineIcons"
-  | "Fontisto"
-  | "Feather"
-  | "FontAwesome5";
 
-export interface IconPropsBase extends TextProps {
-  type: string;
+export enum IconType  {
+  FontAwesome=  "FontAwesome",
+  AntDesign= "AntDesign",
+  MaterialIcons= "MaterialIcons",
+  EvilIcons = "EvilIcons",
+  Entypo= "Entypo",
+  Foundation= "Foundation",
+    Ionicons   = "Ionicons",
+    MaterialCommunityIcons = "MaterialCommunityIcons",
+    Zocial = "Zocial",
+    Octicons  = "Octicons",
+    SimpleLineIcons= "SimpleLineIcons",
+    Fontisto= "Fontisto",
+    Feather= "Feather",
+    FontAwesome5 = "FontAwesome5",
+}
+
+export interface IconProps extends TextProps {
+  type: IconType;
   name: string;
   size?: number;
   color?: string;
+  brand?: string;
+  solid?: string;
   onPress?: (event: GestureResponderEvent) => void;
   style?: TextStyle;
 }
-
-interface AntDesignProps extends IconPropsBase {
-  type: "AntDesign";
-}
-interface MaterialIconsProps extends IconPropsBase {
-  type: "MaterialIcons";
-}
-interface EvilIconsProps extends IconPropsBase {
-  type: "EvilIcons";
-}
-interface EntypoProps extends IconPropsBase {
-  type: "Entypo";
-}
-interface FontAwesomeProps extends IconPropsBase {
-  type: "FontAwesome";
-}
-interface FoundationProps extends IconPropsBase {
-  type: "Foundation";
-}
-interface IoniconsProps extends IconPropsBase {
-  type: "Ionicons";
-}
-interface MaterialCommunityIconsProps extends IconPropsBase {
-  type: "MaterialCommunityIcons";
-}
-interface ZocialProps extends IconPropsBase {
-  type: "Zocial";
-}
-interface OcticonsProps extends IconPropsBase {
-  type: "Octicons";
-}
-interface SimpleLineIconsProps extends IconPropsBase {
-  type: "SimpleLineIcons";
-}
-interface FontistoProps extends IconPropsBase {
-  type: "Fontisto";
-}
-interface FeatherProps extends IconPropsBase {
-  type: "Feather";
-}
-
-interface FontAwesome5Props extends IconPropsBase {
-  type: "FontAwesome5";
-  brand?: boolean;
-  solid?: boolean;
-}
-
-type IconProps =
-  | AntDesignProps
-  | MaterialIconsProps
-  | EvilIconsProps
-  | EntypoProps
-  | FontAwesomeProps
-  | FoundationProps
-  | IoniconsProps
-  | MaterialCommunityIconsProps
-  | ZocialProps
-  | OcticonsProps
-  | SimpleLineIconsProps
-  | FontistoProps
-  | FeatherProps
-  | FontAwesome5Props;
 
 const Icon = (props: IconProps): JSX.Element => {
   const { name, color, size, onPress, style, ...textProps } = props;

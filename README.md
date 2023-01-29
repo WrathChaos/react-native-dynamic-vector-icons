@@ -18,7 +18,6 @@ Add the dependency:
 ```ruby
 npm i react-native-dynamic-vector-icons
 npm i react-native-vector-icons
-react-native link # Yes! You still need to run this command to link the vector icons' assets
 # iOS Only
 npx pod-install
 ```
@@ -34,15 +33,13 @@ npx pod-install
 ##### IMPORTANT! You need install them.
 
 ```
-"react": ">= 16.x",
-"react-native": ">= 0.55.x",
 "react-native-vector-icons": ">= 6.x.x"
 ```
 
 ## Import
 
 ```js
-import Icon from "react-native-dynamic-vector-icons";
+import Icon, { IconType } from "react-native-dynamic-vector-icons";
 ```
 
 ## Basic Usage
@@ -50,7 +47,7 @@ import Icon from "react-native-dynamic-vector-icons";
 ```jsx
 <Icon
   name="github"
-  type="AntDesign"
+  type={IconType.AntDesign}
   size={30}
   color="purple"
   onPress={() => {}}
@@ -214,7 +211,7 @@ These steps are optional and only needed if you want to use the `Icon.getImageSo
 | -------- | :------: | :-------: | ------------------------------------------------ |
 | style    |  style   |   style   | use this to change the Icon's style              |
 | name     |  string  |   null    | use this to change icon's itself                 |
-| type     |  string  |   null    | set the icon's type                              |
+| type     | IconType |   null    | set the icon's type                              |
 | size     |  number  |   null    | changes the icon's size                          |
 | color    |  color   |   null    | use this to change icon's color                  |
 | onPress  | function | undefined | use this to set the icon's onPress functionality |
