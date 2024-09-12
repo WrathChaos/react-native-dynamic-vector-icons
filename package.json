@@ -1,6 +1,6 @@
 {
   "name": "react-native-dynamic-vector-icons",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "description": "Wrapper of react-native-vector-icons to use dynamic types.",
   "keywords": [
     "react-native-dynamic-vector-icons",
@@ -34,7 +34,6 @@
     "@types/react": "^18.0.12",
     "@types/react-native": "^0.73.0",
     "eslint": "^9.0.0",
-    "eslint-config-airbnb": "^19.0.4",
     "husky": "^9.0.2",
     "lint-staged": "^15.0.1",
     "npm-post-install": "0.0.2",
@@ -55,5 +54,6 @@
     "husky:commitlint": "npx husky add .husky/commit-msg 'npx --no-install commitlint --edit'",
     "husky:prettier": "npx husky set .husky/pre-commit 'npm run prettier'",
     "husky:lint": "npx husky add .husky/pre-commit 'npm run lint'"
-  }
+  },
+  "packageManager": "yarn@4.4.0+sha512.91d93b445d9284e7ed52931369bc89a663414e5582d00eea45c67ddc459a2582919eece27c412d6ffd1bd0793ff35399381cb229326b961798ce4f4cc60ddfdb"
 }
